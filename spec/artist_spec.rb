@@ -12,7 +12,7 @@ describe "Artist" do
     expect(artist.name).to eq("Justice")
     expect(artist.genre).to eq("Electronic")
     expect(artist.age).to eq(Time.now.strftime("%Y").to_i - 2003)
-    expect(artist.hometown).to eq("Paris")
+    expect(artist.hometown).to eq(0)
   end
 
   it "can be saved to the database" do
